@@ -5,7 +5,7 @@ let morgan = require('morgan');
 let bodyParser = require('body-parser');
 let port = 6767;
 let book = require('./app/routes/book');
-let config = require('config'); //we load the db location from the JSON files
+let config = require('config');
 //db options
 let options = { 
                 server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } }, 
